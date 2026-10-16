@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  matchmaker:
+    build: ./matchmaker
+    ports:
+      - "8080:8080"
+    environment:
+      - JWT_SECRET=global_super_secret_key
+      - AGENT_SECRET=super_secret_agent_key

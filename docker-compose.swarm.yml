@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  swarm:
+    build: ./swarm
+    environment:
+      - MATCHMAKER_WS=ws://${MATCHMAKER_IP:-127.0.0.1}:8080/lobby
+      - TELEMETRY_URL=http://${MATCHMAKER_IP:-127.0.0.1}:8080/telemetry
+      - EDGE_URLS=${EDGE_USW_URL:-http://127.0.0.1:5000},${EDGE_USE_URL:-http://127.0.0.1:5001},${EDGE_EU_URL:-http://127.0.0.1:5002}
+      - NUM_BOTS=10
+    restart: unless-stopped

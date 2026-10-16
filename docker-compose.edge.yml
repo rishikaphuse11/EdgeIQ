@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  edge-agent:
+    build: ./edge-arena
+    environment:
+      - JWT_SECRET=global_super_secret_key
+      - AGENT_SECRET=super_secret_agent_key
+    network_mode: "host"

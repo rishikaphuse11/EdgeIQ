@@ -1,0 +1,13 @@
+{
+  "name": "antigravity-swarm",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "ws": "^8.13.0"
+  }
+}

@@ -1,0 +1,8 @@
+fastapi==0.95.1
+uvicorn==0.22.0
+websockets==11.0.3
+scikit-learn==1.2.2
+numpy==1.24.3
+httpx==0.24.1
+pyjwt==2.6.0
+python-dotenv==1.0.0
